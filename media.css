@@ -1,0 +1,485 @@
+@import url('styles.css');
+/* ============================================
+   RESPONSIVE DESIGN - PETITS ÉCRANS
+   ============================================ */
+
+/* Tablettes et grands mobiles (max-width: 1024px) */
+@media (max-width: 1024px) {
+    /* Section Accueil */
+    .homeSection {
+        /* flex-direction: column-reverse; */
+        /* text-align: center; */
+        /* padding: 150px 5% 50px; */
+        gap: 50px;
+        height: auto;
+        min-height: 100vh;
+        margin-top: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        /* height: 90vh; */
+    }
+
+    .home-info {
+        width: 100% !important;
+        max-width: 600px;
+    }
+
+    .home-img .img-box {
+        width: 250px;
+        height: 250px;
+    }
+
+    /* Navigation */
+    header {
+        padding: 0 20px;
+    }
+
+    .navLinks {
+        gap: 15px;
+    }
+
+    .navLinks a {
+        font-size: 16px;
+    }
+
+    /* Section À propos */
+    /* .aboutSection {
+        flex-direction: column;
+        text-align: center;
+        padding: 80px 5%;
+        gap: 40px;
+    } */
+
+    .about-img .img-box {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Section Compétences */
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .skills-grid h3 {
+        font-size: 1.5rem;
+        font-weight: 200;
+    }
+
+    /* Section Projets */
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+    }
+
+    /* Section Contact */
+    .contact-grid {
+        gap: 30px;
+    }
+}
+
+/* Mobiles (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Header */
+
+    /* header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 20px;
+    } */
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    /* #menuIcon{
+        display: block;
+    } */
+
+    .homeSection {
+        flex-direction: column-reverse; 
+        text-align: center;
+        padding: 150px 5% 50px;
+    }
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 80px 5%;
+        gap: 40px;
+    }
+
+    /* header span {
+        margin-bottom: 15px;
+        font-size: 20px;
+    } */
+
+    /* .navLinks {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 20px;
+    } */
+
+    /* Accueil */
+    .homeSection {
+        padding-top: 180px;
+    }
+
+    /* .home-info h1 {
+        font-size: 2rem;
+    }
+
+    .home-info h2 {
+        font-size: 1.2rem;
+    } */
+
+    .home-info p {
+        font-size: 14px;
+    }
+
+    .btn-social {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .social {
+        display: flex;
+        gap: 10px;
+    }
+
+    .social a {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    /* Compétences */
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 15px;
+    }
+
+    .skill-card {
+        padding: 15px;
+    }
+
+    .skill-card h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Projets */
+    /* .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    } */
+
+    /* .project-card {
+        padding: 20px;
+    } */
+
+    /* .project-header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    } */
+
+    .project-badges {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Carrousel */
+    /* .carousel-slide{
+        height: 650px;
+    } */
+    /* .project-carousel .carousel-container {
+        height: 500px;
+    } */
+    .carousel-btn {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* Contact */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-card {
+        padding: 15px 20px;
+    }
+
+    /* Titres des sections */
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .section-title::after {
+        width: 80px;
+    }
+}
+
+/* Petits mobiles (max-width: 480px) */
+@media (max-width: 480px) {
+    /* Navigation */
+    .section-title {
+        font-size: 1.6rem;
+    }
+    .navbar{
+        display: none;
+        position: absolute;
+        top: 55px;
+        right: 20px;
+        padding: 0 10px;
+        border-radius: 10px 0 10px 10px;
+        background-color: rgba(16, 22, 78, 0.747);
+        
+    }
+    #menuIcon{
+        display: block;
+    }
+    .navLinks {
+        flex-direction: column;
+        gap: 10px;
+        /* padding: 10px 0; */
+
+    }
+
+    .navItem {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navLinks a {
+        display: block;
+        padding: 8px 0;
+        font-size: 18px;
+    }
+
+    /* Accueil */
+    /* .home-info h1 {
+        font-size: 0.2rem;
+    }*/
+
+    /* .homeSection{
+        margin-top: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    } */
+
+    .home-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .home-img .img-box {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Sections */
+    .homeSection,
+    .aboutSection,
+    .skillsSection,
+    .projectsSection,
+    .contactSection {
+        
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Compétences */
+    .skill-card span {
+        /* display: none; */
+        font-size: 0.8rem;
+        padding: 4px 8px;
+        margin: 2px;
+    }
+
+    /* Projets */
+    .project-badges {
+        flex-wrap: wrap;
+    }
+
+    .badge {
+        font-size: 0.7rem;
+        padding: 3px 8px;
+    }
+
+    /* .project-carousel {
+        height: 350px;
+    } */
+
+    /* GitHub Card */
+    .github-card {
+        padding: 20px 15px;
+    }
+
+    .github-icon {
+        font-size: 3rem;
+    }
+
+    .github-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .github-btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+    /* Contact */
+    .contact-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .contact-icon {
+        font-size: 1.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .send-btn {
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+    }
+}
+
+/* Très petits mobiles (max-width: 320px) */
+/* @media (max-width: 320px) {
+    .home-info h1 {
+        font-size: 1.5rem;
+    }
+
+    .home-info h2 {
+        font-size: 1rem;
+    }
+
+    .home-img .img-box {
+        width: 180px;
+        height: 180px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-card {
+        padding: 12px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+} */
+
+/* Gestion de l'orientation paysage sur mobiles */
+@media (max-height: 600px) and (orientation: landscape) {
+    .homeSection {
+        padding-top: 120px;
+        min-height: auto;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .home-img .img-box {
+        width: 150px;
+        height: 150px;
+    }
+
+    .home-info h1 {
+        font-size: 1.8rem;
+    }
+
+    .home-info h2 {
+        font-size: 1rem;
+    }
+
+    .btn-social {
+        flex-direction: row;
+        margin-top: 20px;
+    }
+}
+
+/* Correction pour Bootstrap Carousel sur mobiles */
+/* @media (max-width: 768px) {
+    .carousel-inner img {
+        height: 200px !important;
+        object-fit: cover;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 40px;
+        height: 40px;
+    }
+} */
+
+/* Amélioration de la lisibilité sur petits écrans */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1, h2, h3 {
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+
+    p {
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+}
+
+/* Cache certains éléments sur très petits écrans */
+/* @media (max-width: 360px) {
+    .project-features {
+        display: none;
+    }
+
+    .github-card p {
+        display: none;
+    }
+} */
+
+/* Ajustements pour les tablettes en mode portrait */
+/* @media (min-width: 481px) and (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+} */
+
+/* Correction du z-index pour le menu sur mobiles */
+/* @media (max-width: 768px) {
+    header {
+        z-index: 1000;
+    }
+
+    .navLinks {
+        background: rgba(16, 22, 78, 0.95);
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 10px;
+        backdrop-filter: blur(10px);
+    }
+} */

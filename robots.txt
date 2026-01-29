@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dieu-beni.github.io/sitemap.xml
+
+# GitHub Pages ignore certains headers, donc on reste simple

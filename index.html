@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developpeur web Full Stack</title>
+
+    <meta name="description" content="Portfolio de Dieu-Beni JINANONN- Développeur Full Stack spécialisé en Angular, Laravel, Flutter et Java. Découvrez mes projets de développement web, mobile et applications.">
+    <meta name="keywords" content="développeur web, full stack, Angular, React, Laravel, Flutter, portfolio, Sénégal, Dakar, développeur mobile, site web, applications, projets, informatique de gestion">
+    <meta name="author" content="Dieu-Beni JINANONN">
+    <meta name="robots" content="index, follow">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="media.css">
+
+    <!-- OPEN GRAPH (ESSENTIEL pour LinkedIn) -->
+    <meta property="og:title" content="Dieu-Beni JINANONN - Portfolio Développeur Full Stack">
+    <meta property="og:description" content="Découvrez mes projets de développement web et mobile. Expert React, Laravel, Flutter.">
+    <meta property="og:image" content="https://don-extralegal-nonuprightly.ngrok-free.dev/assets/share2.jpg">
+    <meta property="og:image:width" content="540">
+    <meta property="og:image:height" content="859">
+    <meta property="og:url" content="https://don-extralegal-nonuprightly.ngrok-free.dev/">
+    <meta property="og:type" content="website">
+    <meta property="og:image:alt" content="Portfolio Dieu-Beni JINANONN - Développeur Full Stack">
+    
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- FAVICON (important pour GitHub Pages) -->
+    <link rel="icon" href="assets/images/favicon_io/android-chrome-192x192.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/images/favicon_io/apple-touch-icon.png">
+</head>
+
+<body>
+    <header>
+        <span>Portfolio</span>
+        <nav class="navbar">
+            <ul class="navLinks">
+                <li class="navItem">
+                    <a class="navLink active" href="#home">Accueil</a>
+                </li>
+                <li class="navItem">
+                    <a class="navLink" href="#about">À propos</a>
+                </li>
+                <li class="navItem">
+                    <a class="navLink" href="#skills">Compétences</a>
+                </li>
+                <li class="navItem">
+                    <a class="navLink" href="#projects">Projets</a>
+                </li>
+                <li class="navItem">
+                    <a class="navLink" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <i class="bi bi-list" id="menuIcon" onclick="showMenu()"></i>
+        <!-- <i class="bi bi-sun" id="themeToggle" onclick="toggleTheme()"></i> -->
+        <!-- <i class="bi bi-x-lg"></i> -->
+    </header>
+    <main>
+        <div class="w-100% d-flex flex-column align-items-center">
+            <section id="home" class="homeSection col-lg-12">
+                <div class="home-info col-lg-6 ">
+                    <h1>Dieu-Beni JINANONN</h1>
+                    <h2>Je suis
+                        <span style="--i:4" data-text="Développeur Web">Développeur Web</span>
+                        <span style="--i:3" data-text="Développeur Mobile">Développeur Mobile</span>
+                        <span style="--i:2" data-text="Développeur Desktop">Développeur Desktop</span>
+                        <span style="--i:1" data-text="Développeur Full Stack">Développeur Full Stack</span>
+                    </h2>
+                    <p>Développeur passionné, je suis titulaire d'une licence en Informatique de Gestion.
+                        Curieux et motivé pour relever des défis techniques
+                    </p>
+                    <div class="btn-social">
+                        <a href="assets/myCv.pdf" class="btn" download="Cv_Jinanonn_Dieu-Beni.pdf">Télécharger CV</a>
+                        <div class="social">
+                            <a href="https://github.com/Dieu-Beni" target="_blank"><i class="bi bi-github"></i></a>
+                            <!-- <a href="#"><i class="bi bi-facebook"></i></a> -->
+                            <a href="https://www.linkedin.com/in/dieu-beni-jinanonn" target="_blank"><i class='bi bi-linkedin'></i></a>
+                            <!-- <a href="#"><i class='bi bi-instagram'></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="home-img">
+                    <div class="img-box">
+                        <div class="img-item">
+                            <img src="assets/profil.png" alt="Dieu-Beni JINANONN développeur" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="about" class="aboutSection">
+                <h2 class="section-title"><i class="bi bi-person"></i> À PROPOS DE MOI</h2>
+                <div class="about-content">
+                    <div class="about-img">
+                        <div class="img-box">
+                            <div class="img-item">
+                                <img src="assets/profil.png" alt="Dieu-Beni JINANONN développeur" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-info">
+                        <p>Développeur full-stack, je suis passionné 
+                            par la création d’applications numériques fiables, performantes et centrées 
+                            sur l’utilisateur. Issu d’une formation en informatique de gestion, je combine 
+                            des compétences techniques solides avec une bonne compréhension des besoins métiers, 
+                            ce qui me permet de concevoir des solutions concrètes et adaptées aux contextes réels.
+                        </p>
+                        <p>
+                            Je maîtrise aussi bien le développement frontend que backend, ce qui me permet de 
+                            prendre en charge un projet dans sa globalité : de l’analyse du besoin et la conception, 
+                            jusqu’au développement, aux tests et à l’amélioration continue. J’accorde une importance 
+                            particulière à la qualité du code, à la maintenabilité des applications et à l’expérience 
+                            utilisateur.
+                        </p>
+                        <p>
+                            Curieux, autonome et motivé, j’aime relever des défis techniques et apprendre en continu. 
+                            Je considère chaque projet comme une opportunité d’évoluer, d’approfondir mes compétences et 
+                            de proposer des solutions toujours plus efficaces. Mon objectif est de créer des applications 
+                            utiles, évolutives et durables, tout en respectant les bonnes pratiques du développement logiciel.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Section Compétences Techniques -->
+            <section id="skills" class="skillsSection">
+                <h2 class="section-title"><i class="bi bi-tools"></i> COMPÉTENCES TECHNIQUES</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                            <h3><i class="bi bi-display"></i> Frontend</h3>
+                        <p>Langages</p>
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>TypeScript</span>
+                        <p>Frameworks</p>
+                        <span>Angular</span><span>React.js</span><span>Vue.js</span>
+                    </div>
+                    <div class="skill-card">
+                        <h3><i class="bi bi-hdd-stack"></i> Backend</h3>
+                        <p>Langages</p>
+                        <span>PHP</span><span>Java</span><span>JavaScript</span>
+                        <p>Frameworks</p>
+                        <span>Laravel</span><span>Spring Boot</span><span>Node.js</span>
+                    </div>
+                    <div class="skill-card">
+                        <h3><i class="bi bi-phone"></i> Mobile</h3>
+                        <p>Langages</p>
+                        <span>Dart</span><span>TypeScript</span><span>Java</span>
+                        <p>Frameworks</p>
+                        <span>Flutter</span><span>React Native</span>
+                    </div>
+                    <div class="skill-card">
+                        <h3><i class="bi bi-laptop"></i> Desktop</h3>
+                        <p>Langages</p>
+                        <span>JavaFx</span><span>C#</span>
+                    </div>
+                    <div class="skill-card">
+                        <h3><i class="bi bi-database"></i> SGBD</h3>
+                        <p>SQL</p>
+                        <span>MySQL</span><span>PostgreSQL</span>
+                    </div>
+                    <div class="skill-card">
+                        <h3><i class="bi bi-git"></i> Versioning</h3>
+                        <p>Git</p>
+                        <span>Git</span><span>GitHub</span>
+                    </div>
+                </div>
+            </section>
+            <!-- Section Projets -->
+            <section id="projects" class="projectsSection">
+                <h2 class="section-title"><i class="bi bi-rocket-takeoff"></i> PROJETS Réalisés</h2>
+                <div class="projects-grid">
+                    <!-- Projet 1 -->
+                    <div class="project-card">
+                        <div class="project-glow"></div>
+                        <div class="project-header">
+                            <i class="bi bi-cloud-moon project-icon"></i>
+                            <div class="project-badges">
+                                <span class="badge">Flutter</span>
+                                <span class="badge">Dart</span>
+                                <span class="badge">Retrofit</span>
+                            </div>
+                        </div>
+                        <h3>Météo App</h3>
+                        <!-- Carrousel Description/Image/Video -->
+                        <div class="project-carousel">
+                            <div class="carousel-container">
+                                <!-- Description -->
+                                <div class="carousel-slide">
+                                    <div>
+                                        <p class="project-description">
+                                            Une application mobile de météo intuitive et élégante développée avec Flutter.
+                                            Obtenez des prévisions précises de 5 villes (Dakar, Bangui, Lisbonne, New York, Pékin), des animations fluides et une interface
+                                            conviviale pour planifier vos journées en toute confiance.
+                                        </p>
+                                        <div class="project-features">
+                                            <span><i class="bi bi-check"></i> Animations fluides</span>
+                                            <span><i class="bi bi-check"></i> Météo en temp réelle</span>
+                                            <span><i class="bi bi-check"></i> Dark mode et light mode</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Image -->
+                                <div class="carousel-slide active">
+                                    <img src="assets/images/capture_meteoapp1.jpg" alt="Capture d'écran Météo App"
+                                        class="project-media" loading="lazy">
+                                    <div class="media-label">
+                                        <i class="fas fa-image"></i> Capture
+                                    </div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="assets/images/capture_meteoapp2.jpg" alt="Capture d'écran Météo App"
+                                        class="project-media">
+                                    <div class="media-label">
+                                        <i class="fas fa-image"></i> Capture
+                                    </div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="assets/images/capture_meteoapp3.jpg" alt="Capture d'écran Météo App"
+                                        class="project-media" loading="lazy">
+                                    <div class="media-label">
+                                        <i class="fas fa-image"></i> Capture
+                                    </div>
+                                </div>
+
+                                <!-- Vidéo -->
+                                <div class="carousel-slide">
+                                    <video class="project-media" controls poster="assets/images/capture_meteoapp1.jpg">
+                                        <source src="assets/videos/video_meteoApp.mp4" type="video/mp4">
+                                        Votre navigateur ne supporte pas la vidéo.
+                                    </video>
+                                    <div class="media-label">
+                                        <i class="fas fa-video"></i> Démonstration
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-counter">
+                                <span class="current-slide">1</span> / <span class="total-slides">4</span>
+                                <button class="carousel-btn prev-btn" aria-label="Précédent">
+                                    <i class="bi bi-chevron-left"></i>
+                                </button>
+    
+                                <button class="carousel-btn next-btn" aria-label="Suivant">
+                                    <i class="bi bi-chevron-right"></i>
+                                </button>
+                                <a href="https://github.com/Dieu-Beni/meteo_app" target="_blank" class="carousel-btn">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Projet 2 -->
+                     <div class="project-card">
+                        <div class="project-glow"></div>
+                        <div class="project-header">
+                            <i class="bi bi-truck project-icon"></i>
+                            <div class="project-badges">
+                                <span class="badge">React</span>
+                                <span class="badge">Laravel</span>
+                                <span class="badge">API RESTfull</span>
+                                <!-- <span class="badge">JavaScript</span> -->
+                            </div>
+                        </div>
+                        <h3>Gestion équipement</h3>
+                        <!-- Carrousel Description/Image/Video -->
+                        <div class="project-carousel">
+                            <div class="carousel-container">
+                                <!-- Description -->
+                                <div class="carousel-slide active">
+                                    <div>
+                                        <p class="project-description">
+                                            Une application web pour la gestion des équipements entre les campus d'une université.
+                                            Permet le suivi des équipements, la gestion des utilisateurs, des transferts, des réclamations et des demandes.
+                                            Interface intuitive avec tableaux de bord, et stats.
+                                        </p>
+                                        <div class="project-features">
+                                            <span><i class="bi bi-check"></i> Tableaux de bord analytiques</span>
+                                            <span><i class="bi bi-check"></i> Suivi des équipements</span>
+                                            <span><i class="bi bi-check"></i> Gestion des users, demandes et réclamations</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Image -->
+                                <div class="carousel-slide">
+                                    <img src="assets/images/logistique_app_1.jpg" alt="Capture d'écran Portfolio Futuriste"
+                                        class="project-media img-fluid" loading="lazy">
+                                    <div class="media-label">
+                                        <i class="fas fa-image"></i> Capture
+                                    </div>
+                                </div>
+                                <!-- Vidéo -->
+                                <!-- <div class="carousel-slide">
+                                    <video class="project-media" controls poster="chemin/vers/poster-video.jpg">
+                                        <source src="chemin/vers/demo-projet.mp4" type="video/mp4">
+                                        Votre navigateur ne supporte pas la vidéo.
+                                    </video>
+                                    <div class="media-label">
+                                        <i class="fas fa-video"></i> Démonstration
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div class="slide-counter">
+                                <span class="current-slide">1</span> / <span class="total-slides">3</span>
+                                <button class="carousel-btn prev-btn" aria-label="Précédent">
+                                    <i class="bi bi-chevron-left"></i>
+                                </button>
+    
+                                <button class="carousel-btn next-btn" aria-label="Suivant">
+                                    <i class="bi bi-chevron-right"></i>
+                                </button>
+                                <a href="https://github.com/Dieu-Beni/Gestion_Logistique_Planete2" target="_blank" class="carousel-btn">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Projet 3 -->
+                     <div class="project-card">
+                        <div class="project-glow"></div>
+                        <div class="project-header">
+                            <i class="bi bi-robot project-icon"></i>
+                            <div class="project-badges">
+                                <span class="badge">HTML</span>
+                                <span class="badge">CSS3</span>
+                                <span class="badge">JavaScript</span>
+                            </div>
+                        </div>
+                        <h3>Chatbot IA</h3>
+                        <!-- Carrousel Description/Image/Video -->
+                        <div class="project-carousel">
+                            <div class="carousel-container">
+                                <!-- Description -->
+                                <div class="carousel-slide active">
+                                    <div>
+                                        <p class="project-description">
+                                            Un chatbot IA interactif développé avec HTML, CSS et JavaScript.
+                                            Intègre l'API de Gemini pour des conversations fluides et engageantes. 
+                                            Permet aux utilisateurs de poser des questions et d'obtenir des réponses instantanées avec possibilités lire les images.
+                                        </p>
+                                        <div class="project-features">
+                                            <span><i class="bi bi-check"></i> Réponses instantanées</span>
+                                            <span><i class="bi bi-check"></i> Design moderne et fluide</span>
+                                            <span><i class="bi bi-check"></i> Lecture d'images</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Image -->
+                                <div class="carousel-slide">
+                                    <img src="assets/images/Capture_chatbotapp.png" alt="Capture d'écran Chatbot IA"
+                                        class="project-media" loading="lazy">
+                                    <div class="media-label">
+                                        <i class="fas fa-image"></i> Capture
+                                    </div>
+                                </div>
+
+                                <!-- Vidéo -->
+                                <div class="carousel-slide">
+                                    <video class="project-media" controls poster="assets/images/Capture_chatbotapp.png">
+                                        <source src="assets/videos/video_chatbot.mp4" type="video/mp4">
+                                        Votre navigateur ne supporte pas la vidéo.
+                                    </video>
+                                    <div class="media-label">
+                                        <i class="fas fa-video"></i> Démonstration
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-counter">
+                                <span class="current-slide">1</span> / <span class="total-slides">3</span>
+                                <button class="carousel-btn prev-btn" aria-label="Précédent">
+                                    <i class="bi bi-chevron-left"></i>
+                                </button>
+    
+                                <button class="carousel-btn next-btn" aria-label="Suivant">
+                                    <i class="bi bi-chevron-right"></i>
+                                </button>
+                                <a href="https://github.com/Dieu-Beni/ChatBot_js" target="_blank" class="carousel-btn">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Voir plus de projets -->
+                <div class="github-section">
+                    <div class="github-card">
+                        <i class="bi bi-github github-icon"></i>
+                        <h3>+ de projets sur GitHub</h3>
+                        <p>Découvrez tous mes projets open-source, contributions et expérimentations</p>
+                        <a href="https://github.com/Dieu-Beni" target="_blank" class="github-btn">
+                            <i class="bi bi-github"></i> Explorer mon GitHub
+                        </a>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="contact" class="contactSection">
+                <h2 class="section-title"><i class="bi bi-wechat"></i> ME CONTACTER</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <i class="bi bi-envelope contact-icon"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p><a href="mailto:jinanonn43@gmail.com">jinanonn43@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <i class="bi bi-geo-alt contact-icon"></i>
+                            <div>
+                                <h3>Localisation</h3>
+                                <p>Dakar, Sénégal</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <i class="bi bi-phone contact-icon"></i>
+                            <div>
+                                <h3>Téléphone</h3>
+                                <p><a href="tel:+221777265191">+221 77 726 51 91</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <i class="bi bi-whatsapp contact-icon"></i>
+                            <div>
+                                <h3>WhatsApp</h3>
+                                <p><a href="tel:+221706424539">+221 70 642 45 39</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name"><i class="bi bi-person"></i> Nom</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email"><i class="bi bi-envelope"></i> Email</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message"><i class="bi bi-chat"></i> Message</label>
+                                <textarea id="message" rows="3" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="send-btn">
+                                <i class="bi bi-send"></i> Envoyer le Message
+                            </button>
+                        </form>
+                </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span>  Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous">
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "@id": "https://dieu-beni.github.io/#person",
+            "name": "Dieu-Beni JINANONN",
+            "url": "https://dieu-beni.github.io",
+            "image": "https://dieu-beni.github.io/assets/profil.png",
+            "description": "Développeur Full Stack spécialisé en applications web et mobiles",
+            "jobTitle": "Développeur Full Stack",
+            "knowsAbout": ["React", "Laravel", "Flutter", "JavaScript", "PHP", "Dart"],
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Dakar",
+                "addressCountry": "SN"
+            },
+            "sameAs": [
+                "https://github.com/Dieu-Beni",
+                "https://www.linkedin.com/in/dieu-beni-jinanonn",
+                "https://dieu-beni.github.io"
+            ]
+        }
+    </script>
+</body>
+
+</html>
